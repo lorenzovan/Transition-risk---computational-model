@@ -31,6 +31,7 @@ The simulation relies on a set of critical parameters, which are defined and con
 ## 📊 Data & Results Structure
 
 The results and analysis are structured to allow for both regional and global assessments of the transition risk add-on. 
+
 The code define the results for each region included in LIMITS database and allows for a comparison between different IAM model/ scenario combinations across different timeframes (2030, 2035, 2040, 2045, 2050). 
 
 ### Regional Analysis
