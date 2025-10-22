@@ -4,7 +4,7 @@
 
 This repository holds the code and analysis developed for the **Master's Research Thesis** by **Lorenzo van Cadsand**.
 
-The primary objective of this project is to **define a capital buffer for transition risk based on a simulation approach, applying VaR as risk measure to the empirical transition risk loss distribution.**
+The primary objective of this project is to **define a capital buffer for transition risk using a simulation approach, applying VaR as the risk measure to the empirical transition risk loss distribution.** This distribution is calculated across a range of num_simulations steps, where each step involves the random association of exposures with a fossil, renewable, or mixed technology mix. The total transition risk portfolio loss is subsequently defined by the aggregation of the individual transition risk losses for each of the n exposures, following the Monasterolo & Battiston climate valuation framework.
 
 The core of the analysis and simulation is contained within the **Jupyter Notebook**.
 
@@ -18,8 +18,8 @@ The simulation relies on a set of critical parameters, which are defined and con
 | :--- | :--- |
 | `num_simulations` | The total number of Monte Carlo simulations to be executed for the VaR calculation. --> in my model = 10.000|
 | `max_subsectors_per_sector` | The maximum number of sub-sectors considered within each primary economic sector in the model. --> in my model = 3|
-| `max_percentages` | This parameter indicates the maximum allowed percentage of fossil fuel or renewable energy production exposure within the simulated portfolios.--> must sum to 100.|
-| `percentile` | The percentile considered for the empirical distribution of Transition Risk losses for the VaR calculation. |
+| `max_percentages` | This parameter indicates the maximum allowed percentage of fossil fuel or renewable energy production exposure within the simulated portfolios --> must sum up to 100.|
+| `percentile(argument)` | The percentile considered for VaR calculation.|
 
 ---
 
