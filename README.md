@@ -10,7 +10,8 @@ The total required add-on is calculated as the sum of these two factors, based o
 
 The transition risk add-on is computed by applying VaR to an empirical distribution of transition risk portfolio losses, generated across a range of num_simulations steps.
 In each step, every portfolio exposure is associated with a fossil, renewable, or mixed technology mix (guided by max_percentages and max_subsectors_per_sector variables), as per CPRS mapping. 
-The total transition risk portfolio loss for each simulation is subsequently defined by aggregating the individual transition risk losses of all exposures, which are computed according to the Monasterolo & Battiston climate valuation framework.
+
+The transition risk portfolio loss for each simulation is subsequently defined by aggregating the individual transition risk losses of all exposures, which are computed according to the Monasterolo & Battiston climate valuation framework.
 
 The core of the analysis and simulation is contained within the **Jupyter Notebook**.
 ---
