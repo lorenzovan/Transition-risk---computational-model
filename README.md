@@ -4,7 +4,11 @@
 
 This repository holds the code and analysis developed for the **Master's Research Thesis** by **Lorenzo van Cadsand**.
 
-The primary objective of this project is to **define a capital buffer for transition risk using a simulation approach, applying VaR as the risk measure to the empirical transition risk loss distribution.** This distribution is calculated across a range of num_simulations steps, where each step involves the random association of exposures with a fossil, renewable, or mixed technology mix. The total transition risk portfolio loss is subsequently defined by the aggregation of the individual transition risk losses for each of the n exposures, following the Monasterolo & Battiston climate valuation framework.
+The primary objective of this project is to **define a capital buffer for transition risk using a simulation approach, applying VaR as the risk measure to the empirical transition risk loss distribution.** This factor should be added to the credit risk add-on defined by Gordy's in "A risk-factor model foundation for ratings-based bank capital rules" in case a climate policy would be introduced according to a specific IAM scenario. 
+The total add-on is equal to the sum of the two factors, assuming the independence between undiversified idiosyncratic risk and the introduction of a climate policy. 
+
+The empirical transition risk loss distribution is calculated across a range of num_simulations steps, each one involving the association of every exposures included in the portfolio with a fossil, renewable, or mixed technology mix (according to max_percentages and max_subsectors_per_sector variables), as per CPRS mapping. 
+The total transition risk portfolio loss is subsequently defined by the aggregation of the Individual transition risk losses of each exposure (computed according to Monasterolo & Battiston climate valuation framework) are then aggregated for every simulation.
 
 The core of the analysis and simulation is contained within the **Jupyter Notebook**.
 
@@ -25,7 +29,8 @@ The simulation relies on a set of critical parameters, which are defined and con
 
 ## 📊 Data & Results Structure
 
-The results and analysis are structured to allow for both regional and global assessments of the transition risk add-on.
+The results and analysis are structured to allow for both regional and global assessments of the transition risk add-on. 
+The code define the results for each region included in LIMITS database and allows for a comparison between different IAM model/ scenario combinations. 
 
 ### Regional Analysis
 
