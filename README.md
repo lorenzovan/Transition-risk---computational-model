@@ -4,14 +4,15 @@
 
 This repository holds the code and analysis developed for the **Master's Research Thesis** by **Lorenzo van Cadsand**.
 
-The primary objective of this project is to **define a capital buffer for transition risk using a simulation approach, applying VaR as the risk measure to the empirical transition risk loss distribution.** This factor should be added to the credit risk add-on defined by Gordy's in "A risk-factor model foundation for ratings-based bank capital rules" in case a climate policy would be introduced according to a specific IAM scenario. 
-The total add-on is equal to the sum of the two factors, assuming the independence between undiversified idiosyncratic risk and the introduction of a climate policy. 
+The primary objective of this project is to **define a capital buffer for transition risk using a simulation approach**. 
+This factor is then integrated with the credit risk add-on defined by Gordy (20039 in "A risk-factor model foundation for ratings-based bank capital rules", contingent upon the introduction of a climate policy under a particular IAM scenario.
+The total required add-on is calculated as the sum of these two factors, based on the assumption of independence between undiversified idiosyncratic risk and the introduction of the climate policy.
 
-The empirical transition risk loss distribution is calculated across a range of num_simulations steps, each one involving the association of every exposures included in the portfolio with a fossil, renewable, or mixed technology mix (according to max_percentages and max_subsectors_per_sector variables), as per CPRS mapping. 
-The total transition risk portfolio loss is subsequently defined by the aggregation of the Individual transition risk losses of each exposure (computed according to Monasterolo & Battiston climate valuation framework) are then aggregated for every simulation.
+The transition risk add-on is computed by applying VaR to an empirical distribution of transition risk portfolio losses, generated across a range of num_simulations steps.
+In each step, every portfolio exposure is associated with a fossil, renewable, or mixed technology mix (guided by max_percentages and max_subsectors_per_sector variables), as per CPRS mapping. 
+The total transition risk portfolio loss for each simulation is subsequently defined by aggregating the individual transition risk losses of all exposures, which are computed according to the Monasterolo & Battiston climate valuation framework.
 
 The core of the analysis and simulation is contained within the **Jupyter Notebook**.
-
 ---
 
 ## ⚙️ Key Parameters
@@ -30,7 +31,7 @@ The simulation relies on a set of critical parameters, which are defined and con
 ## 📊 Data & Results Structure
 
 The results and analysis are structured to allow for both regional and global assessments of the transition risk add-on. 
-The code define the results for each region included in LIMITS database and allows for a comparison between different IAM model/ scenario combinations. 
+The code define the results for each region included in LIMITS database and allows for a comparison between different IAM model/ scenario combinations across different timeframes (2030, 2035, 2040, 2045, 2050). 
 
 ### Regional Analysis
 
