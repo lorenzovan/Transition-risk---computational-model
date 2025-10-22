@@ -1,4 +1,4 @@
-# 🏛️ Computational Model for Transition Risk Capital Buffer
+# 🏛️ Computational Model for a Transition Risk Capital Buffer
 
 ## 💡 Introduction
 
