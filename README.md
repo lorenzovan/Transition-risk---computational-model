@@ -16,6 +16,7 @@ The transition risk portfolio loss for each simulation is subsequently defined b
 **The final model, detailed methodology, and obtained results are described in the uploaded PDF document.**
 
 The core of the analysis and simulation is contained within the **Jupyter Notebook**.
+
 ---
 
 ## ⚙️ Key Parameters
