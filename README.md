@@ -2,7 +2,7 @@
 
 ## 💡 Introduction
 
-This repository holds the code and analysis developed for the **Master's Research Thesis** by **Lorenzo van Cadsand**.
+This repository holds the code (Gitversion-tesi.ipynb) and analysis developed for the **Master's Research Thesis** by **Lorenzo van Cadsand**.
 
 The primary objective of this project is to **define a capital buffer for transition risk using a simulation approach**. 
 This factor is then integrated with the credit risk add-on defined by Gordy (20039 in "A risk-factor model foundation for ratings-based bank capital rules", contingent upon the introduction of a climate policy under a particular IAM scenario.
@@ -12,6 +12,8 @@ The transition risk add-on is computed by applying VaR to an empirical distribut
 In each step, every portfolio exposure is associated with a fossil, renewable, or mixed technology mix (guided by max_percentages and max_subsectors_per_sector variables), as per CPRS mapping. 
 
 The transition risk portfolio loss for each simulation is subsequently defined by aggregating the individual transition risk losses of all exposures, which are computed according to the Monasterolo & Battiston climate valuation framework.
+
+**The final model, detailed methodology, and obtained results are described in the uploaded PDF document.**
 
 The core of the analysis and simulation is contained within the **Jupyter Notebook**.
 ---
