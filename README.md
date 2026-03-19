@@ -27,10 +27,11 @@ The simulation relies on a set of critical parameters, which are defined and con
 | :--- | :--- |
 | `Model` | IAM, used for climate valuation. Possible Choices: REMIND, WITCH.
 | `Scenario` | NGFS scenarios, report existent decarbonization policies. Possible Choices: LIMITSOilIndependence, LIMITS450, LIMITS500, LIMITSPledges, LIMITSEnergyIndependence.
-| `Region` | Possible Choices: Asia, Europe, LAM, NAM, ROW, Africa, World.
-| `CONFIDENCE_LEVEL` | The percentile considered for VaR calculation.
+| `Selected_Region` | Possible Choices: Asia, Europe, LAM, NAM, ROW, Africa, World.
+| `Num_simulations` | The amount of iterations used to build the empirical distribution of transition risk losses.
 | `max_subsectors_per_sector` | The maximum number of sub-sectors considered within each primary economic sector in the model. 
 | `max_percentages` | This parameter indicates the maximum allowed percentage of fossil fuel or renewable energy production exposure within the simulated portfolios (sum up to 100).
+| `Risk-free rate` | 
 | `CONFIDENCE_LEVEL` | The percentile considered for VaR calculation.
 
 ---
