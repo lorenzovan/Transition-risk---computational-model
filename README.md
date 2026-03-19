@@ -25,7 +25,10 @@ The simulation relies on a set of critical parameters, which are defined and con
 
 | Parameter Name | Description |
 | :--- | :--- |
-| `num_simulations` | The total number of Monte Carlo simulations to be executed for the VaR calculation. 
+| `Model` | IAM, used for climate valuation. Possible Choices: REMIND, WITCH.
+| `Scenario` | NGFS scenarios, report existent decarbonization policies. Possible Choices: LIMITSOilIndependence, LIMITS450, LIMITS500, LIMITSPledges, LIMITSEnergyIndependence.
+| `Region` | Possible Choices: Asia, Europe, LAM, NAM, ROW, Africa, World.
+| `CONFIDENCE_LEVEL` | The percentile considered for VaR calculation.
 | `max_subsectors_per_sector` | The maximum number of sub-sectors considered within each primary economic sector in the model. 
 | `max_percentages` | This parameter indicates the maximum allowed percentage of fossil fuel or renewable energy production exposure within the simulated portfolios (sum up to 100).
 | `CONFIDENCE_LEVEL` | The percentile considered for VaR calculation.
