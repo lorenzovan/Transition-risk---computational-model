@@ -72,6 +72,20 @@ The analysis and simulation scripts are located in the main notebook.
 
 ---
 
+## Environment
+
+This project targets Python 3.10+. To create a reproducible environment, install the minimal dependencies from `requirements.txt` and run the notebook using Jupyter Lab/Notebook.
+
+```bash
+python -m pip install -r requirements.txt
+jupyter lab  # or jupyter notebook
+```
+
+Notes:
+- The repository does not ship a virtual environment; we recommend using `venv` or `conda`.
+- If you keep data locally in a `data/` directory (recommended), the notebook will attempt to load files from `./data` before falling back to absolute paths.
+
+
 ## 📧 Contact
 
 * **Author:** Lorenzo van Cadsand
